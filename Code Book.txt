@@ -1,0 +1,159 @@
+                       =========================================================================
+				Coursera: Getting and Cleaning Data, Course Project
+                     				Code book
+                       =========================================================================
+The data set located in the 'tidy_data.txt' file of this repository has been derived from “Human Activity Recognition Using Smartphones Dataset, by Davide Anguita et al., 2012) with transformations, reshaping, clean-up, and appending rows and columns to make it a tidy data set. See the README.md file of this repository for background information about this data set. Below the 'data' section describes about the data structure, variables in the data set are listed in the 'Variables' section, and the transformations made from the source data are presented in the 'Final data set' section.
+
+The zip file containing the source data where the tidy_data.txt has been derived is located at:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+Data
+The tidy_data.txt data file is a text file, that contains the average and standard deviation of human activity recognition measurements from the source data, where the first row contains variable names (Subject, Activity-type, etc.) and the rows that follow contains values.
+Variables
+The data set (tidy_data.txt) contains identifier variables (subject and activity), time-domain, and frequency-domain signal measurement variables. 
+
+Identifiers
+
+• Subject
+A total of 30 volunteers (1-30) within an age bracket of 19-48 years involved in the study
+• Activity
+Six activities of daily living (ADL): Walking, Walking-upstairs, Walking-downstairs, Sitting, Standing, Laying
+
+Measurement Variables
+
+In this data set there are two domains of measurements:
+• Time-domain signals (prefixed by ‘time’), come from the accelerometer and gyroscope 3-axial (X,Y,Z axis) signals 
+• Frequency-domain signals (prefixed by ‘frequency’), produced from some time-domain signals by the application of a Fast Fourier     Transform (FFT) 
+  
+  Note that: variables that contains ‘Accelerometer’ were measured in ‘g’ (standard gravity), and variables that contains ‘Gyroscope’   were measured in ‘radians per second' (rad/s), whereas variables that contains ‘Magnitude’ were calculated using ‘Euclidean norm’
+
+The set of variables that were estimated from these signals are: 
+Mean (): Mean value
+Std (): Standard deviation
+
+Time-domain signals
+• Mean and Standard deviation of Body Acceleration:
+     o	timeBodyAccelerometerMeanX
+     o	timeBodyAccelerometerMeanY
+     o	timeBodyAccelerometerMeanZ
+     o	timeBodyAccelerometerStandardDeviationX
+     o	timeBodyAccelerometerStandardDeviationY
+     o	timeBodyAccelerometerStandardDeviationZ
+• Mean and Standard deviation of Gravity Acceleration:
+     o	timeGravityAccelerometerMeanX
+     o	timeGravityAccelerometerMeanY
+     o	timeGravityAccelerometerMeanZ
+     o	timeGravityAccelerometerStandardDeviationX
+     o	timeGravityAccelerometerStandardDeviationY
+     o	timeGravityAccelerometerStandardDeviationZ
+• Mean and Standard deviation of Body Acceleration Jerk:
+     o	timeBodyAccelerometerJerkMeanX
+     o	timeBodyAccelerometerJerkMeanY
+     o	timeBodyAccelerometerJerkMeanZ
+     o	timeBodyAccelerometerJerkStandardDeviationX
+     o	timeBodyAccelerometerJerkStandardDeviationY
+     o	timeBodyAccelerometerJerkStandardDeviationZ
+• Mean and Standard deviation of Body Angular Velocity:
+     o	timeBodyGyroscopeMeanX
+     o	timeBodyGyroscopeMeanY
+     o	timeBodyGyroscopeMeanZ
+     o	timeBodyGyroscopeStandardDeviationX
+     o	timeBodyGyroscopeStandardDeviationY
+     o	timeBodyGyroscopeStandardDeviationZ
+• Mean and Standard deviation of Body Angular Velocity Jerk:
+     o	timeBodyGyroscopeJerkMeanX
+     o	timeBodyGyroscopeJerkMeanY
+     o	timeBodyGyroscopeJerkMeanZ
+     o	timeBodyGyroscopeJerkStandardDeviationX
+     o	timeBodyGyroscopeJerkStandardDeviationY
+     o	timeBodyGyroscopeJerkStandardDeviationZ
+• Mean and Standard deviation of Magnitude of Body Acceleration:
+     o	timeBodyAccelerometerMagnitudeMean
+     o	timeBodyAccelerometerMagnitudeStandardDeviation
+• Mean and Standard deviation of Magnitude of Gravity Acceleration:
+     o	timeGravityAccelerometerMagnitudeMean
+     o	timeGravityAccelerometerMagnitudeStandardDeviation
+• Mean and Standard deviation of Magnitude of Body Acceleration Jerk:
+     o	timeBodyAccelerometerJerkMagnitudeMean
+     o	timeBodyAccelerometerJerkMagnitudeStandardDeviation
+• Mean and Standard deviation of Magnitude of Body Angular Velocity:
+     o	timeBodyGyroscopeMagnitudeMean
+     o	timeBodyGyroscopeMagnitudeStandardDeviation
+• Mean and Standard deviation of Magnitude of Body Angular Velocity Jerk:
+     o	timeBodyGyroscopeJerkMagnitudeMean
+     o	timeBodyGyroscopeJerkMagnitudeStandardDeviation
+
+Frequency- domain signals
+
+• Mean and Standard deviation of Body Acceleration:
+     o	frequencyBodyAccelerometerMeanX
+     o	frequencyBodyAccelerometerMeanY
+     o	frequencyBodyAccelerometerMeanZ
+     o	frequencyBodyAccelerometerStandardDeviationX
+     o	frequencyBodyAccelerometerStandardDeviationY
+     o	frequencyBodyAccelerometerStandardDeviationZ
+• Weighted average of the frequency components of body acceleration: 
+     o	frequencyBodyAccelerometerMeanFrequencyX
+     o	frequencyBodyAccelerometerMeanFrequencyY
+     o	frequencyBodyAccelerometerMeanFrequencyZ
+• Mean and Standard deviation of Body Acceleration Jerk:
+     o	frequencyBodyAccelerometerJerkMeanX
+     o	frequencyBodyAccelerometerJerkMeanY
+     o	frequencyBodyAccelerometerJerkMeanZ
+     o	frequencyBodyAccelerometerJerkStandardDeviationX
+     o	frequencyBodyAccelerometerJerkStandardDeviationY
+     o	frequencyBodyAccelerometerJerkStandardDeviationZ
+• Weighted average of the frequency components of body acceleration jerk:
+     o	frequencyBodyAccelerometerJerkMeanFrequencyX
+     o	frequencyBodyAccelerometerJerkMeanFrequencyY
+     o	frequencyBodyAccelerometerJerkMeanFrequencyZ
+• Mean and Standard deviation of Body Angular Velocity:
+     o	frequencyBodyGyroscopeMeanX
+     o	frequencyBodyGyroscopeMeanY
+     o	frequencyBodyGyroscopeMeanZ
+     o	frequencyBodyGyroscopeStandardDeviationX
+     o	frequencyBodyGyroscopeStandardDeviationY
+     o	frequencyBodyGyroscopeStandardDeviationZ
+• Weighted average of the frequency components of the body angular velocity:
+     o	frequencyBodyGyroscopeMeanFrequencyX
+     o	frequencyBodyGyroscopeMeanFrequencyY
+     o	frequencyBodyGyroscopeMeanFrequencyZ
+• Mean, standard deviation, and weighted average of the frequency components of magnitude of body acceleration:
+     o	frequencyBodyAccelerometerMagnitudeMean
+     o	frequencyBodyAccelerometerMagnitudeStandardDeviation
+     o	frequencyBodyAccelerometerMagnitudeMeanFrequency
+• Mean, standard deviation, and weighted average of the frequency components of magnitude of body acceleration jerk:
+     o	frequencyBodyAccelerometerJerkMagnitudeMean
+     o	frequencyBodyAccelerometerJerkMagnitudeStandardDeviation
+     o	frequencyBodyAccelerometerJerkMagnitudeMeanFrequency
+
+• Mean, standard deviation, and weighted average of the frequency components of magnitude of body angular velocity:
+     o	frequencyBodyGyroscopeMagnitudeMean
+     o	frequencyBodyGyroscopeMagnitudeStandardDeviation
+     o	frequencyBodyGyroscopeMagnitudeMeanFrequency
+• Mean, standard deviation, and weighted average of the frequency components of magnitude of body angular velocity jerk:
+     o	frequencyBodyGyroscopeJerkMagnitudeMean
+     o	frequencyBodyGyroscopeJerkMagnitudeStandardDeviation
+     o	frequencyBodyGyroscopeJerkMagnitudeMeanFrequency
+
+Final data set 
+
+The R script 'run_analysis.R' downloads the source data set and transforms it to produce the final data set by applying the following steps:
+• Source data were downloaded and unzipped, and read in R.
+• The training and test sets were merged to create one data set.
+• Only the measurements on the mean and standard deviation for each measurement have been extracted.
+• Integer coded activity identifiers (1-6) were replaced with descriptive activity names.
+• The variable names were replaced with descriptive variable names.
+• Finally, an independent tidy data set with the mean and standard deviation of each variable for each activity and each subject has   been created.
+
+
+
+
+
+
+
+
+
+
+
+
